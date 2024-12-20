@@ -58,7 +58,7 @@ class RecallTracker:
         return report
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class Flickr30kMetric(BaseMetric):
     """Phrase Grounding Metric."""
 

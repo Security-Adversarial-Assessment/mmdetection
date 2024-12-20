@@ -12,7 +12,7 @@ from mmengine.registry import EVALUATOR
 from mmdet.utils import ConfigType
 
 
-@EVALUATOR.register_module()
+# @EVALUATOR.register_module()
 class MultiDatasetsEvaluator(Evaluator):
     """Wrapper class to compose class: `ConcatDataset` and multiple
     :class:`BaseMetric` instances.

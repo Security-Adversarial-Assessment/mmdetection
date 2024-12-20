@@ -12,7 +12,7 @@ from mmdet.registry import METRICS
 from .coco_metric import CocoMetric
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class CocoOccludedSeparatedMetric(CocoMetric):
     """Metric of separated and occluded masks which presented in paper `A Tri-
     Layer Plugin to Improve Occluded Detection.

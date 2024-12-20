@@ -15,7 +15,7 @@ from mmdet.registry import METRICS
 from .coco_metric import CocoMetric
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class OVCocoMetric(CocoMetric):
 
     def compute_metrics(self, results: list) -> Dict[str, float]:

@@ -16,7 +16,7 @@ except ImportError:
     COCOEvalCap = None
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class COCOCaptionMetric(BaseMetric):
     """Coco Caption evaluation wrapper.
 
