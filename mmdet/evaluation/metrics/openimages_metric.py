@@ -11,7 +11,7 @@ from mmdet.registry import METRICS
 from ..functional import eval_map
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class OpenImagesMetric(BaseMetric):
     """OpenImages evaluation metric.
 

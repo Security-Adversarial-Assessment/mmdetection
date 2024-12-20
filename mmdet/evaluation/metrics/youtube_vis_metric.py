@@ -18,7 +18,7 @@ from ..functional import YTVIS, YTVISeval
 from .base_video_metric import BaseVideoMetric, collect_tracking_results
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class YouTubeVISMetric(BaseVideoMetric):
     """mAP evaluation metrics for the VIS task.
 

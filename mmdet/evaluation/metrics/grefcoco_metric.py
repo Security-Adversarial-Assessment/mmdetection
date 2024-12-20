@@ -13,7 +13,7 @@ from ..functional import bbox_overlaps
 
 
 # refer from https://github.com/henghuiding/gRefCOCO/blob/main/mdetr/datasets/refexp.py # noqa
-@METRICS.register_module()
+# @METRICS.register_module()
 class gRefCOCOMetric(BaseMetric):
     default_prefix: Optional[str] = 'grefcoco'
 

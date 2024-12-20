@@ -9,7 +9,7 @@ from mmdet.registry import METRICS
 from mmdet.structures.mask import encode_mask_results
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class DumpDetResults(DumpResults):
     """Dump model predictions to a pickle file for offline evaluation.
 

@@ -11,7 +11,7 @@ from mmdet.datasets.api_wrappers import COCO, COCOeval
 from mmdet.registry import METRICS
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class DODCocoMetric(BaseMetric):
 
     default_prefix: Optional[str] = 'dod'

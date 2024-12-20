@@ -12,7 +12,7 @@ from mmengine.structures import InstanceData
 from mmdet.registry import METRICS
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class DumpProposals(BaseMetric):
     """Dump proposals pseudo metric.
 
