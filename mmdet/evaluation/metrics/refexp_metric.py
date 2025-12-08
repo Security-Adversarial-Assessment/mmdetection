@@ -11,7 +11,7 @@ from mmdet.registry import METRICS
 from ..functional import bbox_overlaps
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class RefExpMetric(BaseMetric):
     default_prefix: Optional[str] = 'refexp'
 

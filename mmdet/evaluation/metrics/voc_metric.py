@@ -12,7 +12,7 @@ from mmdet.registry import METRICS
 from ..functional import eval_map, eval_recalls
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class VOCMetric(BaseMetric):
     """Pascal VOC evaluation metric.
 

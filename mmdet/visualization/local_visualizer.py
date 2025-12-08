@@ -497,13 +497,14 @@ class DetLocalVisualizer(Visualizer):
         # save it as a video during video inference.
         self.set_image(drawn_img)
 
-        if show:
-            self.show(drawn_img, win_name=name, wait_time=wait_time)
-
-        if out_file is not None:
-            mmcv.imwrite(drawn_img[..., ::-1], out_file)
-        else:
-            self.add_image(name, drawn_img, step)
+        return drawn_img
+        # if show:
+        #     self.show(drawn_img, win_name=name, wait_time=wait_time)
+        #
+        # if out_file is not None:
+        #     mmcv.imwrite(drawn_img[..., ::-1], out_file)
+        # else:
+        #     self.add_image(name, drawn_img, step)
 
 
 def random_color(seed):

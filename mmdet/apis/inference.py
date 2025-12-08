@@ -195,6 +195,28 @@ def inference_detector(
     else:
         return result_list
 
+class InferenceDetector(nn.Module):
+    def __init__(self):
+        super(InferenceDetector, self).__init__()
+
+    def forward(self, model, imgs):
+        imgs = [imgs]
+        is_batch = False
+
+        cfg = model.cfg
+
+        cfg = cfg.copy()
+        test_pipeline = get_test_pipeline_cfg(cfg)
+        test_pipeline[0].type = 'mmdet.LoadImageFromNDArray'
+        test_pipeline = Compose(test_pipeline)
+
+        for i, img in enumerate(imgs):
+            data = dict(img=img)
+            data = test_pipeline(data)
+            data['inputs'] = [data['inputs']]
+            data['data_samples'] = [data['data_samples']]
+
+        return data
 
 # TODO: Awaiting refactoring
 async def async_inference_detector(model, imgs):

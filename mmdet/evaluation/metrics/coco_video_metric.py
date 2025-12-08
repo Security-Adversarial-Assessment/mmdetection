@@ -9,7 +9,7 @@ from .base_video_metric import collect_tracking_results
 from .coco_metric import CocoMetric
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class CocoVideoMetric(CocoMetric):
     """COCO evaluation metric.
 

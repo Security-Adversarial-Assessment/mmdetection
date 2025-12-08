@@ -20,7 +20,7 @@ except ImportError:
 from mmdet.registry import METRICS
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class SemSegMetric(BaseMetric):
     """mIoU evaluation metric.
 

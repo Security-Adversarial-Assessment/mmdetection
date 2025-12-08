@@ -24,7 +24,7 @@ except ImportError:
     HAS_CITYSCAPESAPI = False
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class CityScapesMetric(BaseMetric):
     """CityScapes metric for instance segmentation.
 

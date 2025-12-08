@@ -13,7 +13,7 @@ except ImportError:
     jsonlines = None
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class DumpODVGResults(BaseMetric):
     default_prefix: Optional[str] = 'pl_odvg'
 

@@ -36,7 +36,7 @@ except ImportError:
     LVISResults = None
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class LVISMetric(CocoMetric):
     """LVIS evaluation metric.
 
@@ -385,7 +385,7 @@ def _merge_lists(listA, listB, maxN, key):
     return result
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class LVISFixedAPMetric(BaseMetric):
     default_prefix: Optional[str] = 'lvis_fixed_ap'
 

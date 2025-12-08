@@ -7,7 +7,7 @@ from mmengine.evaluator import BaseMetric
 from mmdet.registry import METRICS
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class RefSegMetric(BaseMetric):
     """Referring Expression Segmentation Metric."""
 

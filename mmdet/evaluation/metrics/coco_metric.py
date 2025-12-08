@@ -19,7 +19,7 @@ from mmdet.structures.mask import encode_mask_results
 from ..functional import eval_recalls
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class CocoMetric(BaseMetric):
     """COCO evaluation metric.
 

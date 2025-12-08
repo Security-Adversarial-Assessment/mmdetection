@@ -20,7 +20,7 @@ from mmdet.registry import METRICS
 PERSON_CLASSES = ['background', 'person']
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class CrowdHumanMetric(BaseMetric):
     """CrowdHuman evaluation metric.
 

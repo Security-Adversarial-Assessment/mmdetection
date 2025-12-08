@@ -29,7 +29,7 @@ except ImportError:
     PQStat = None
 
 
-@METRICS.register_module()
+# @METRICS.register_module()
 class CocoPanopticMetric(BaseMetric):
     """COCO panoptic segmentation evaluation metric.
 
